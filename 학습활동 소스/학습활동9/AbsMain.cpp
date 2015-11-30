@@ -10,10 +10,10 @@ int	main()
 	Rectangle	r(10, 10, 30, 20);
 
 	c.print();
-	cout << "       ¸éÀû = " << c.area() << endl << endl;
+	cout << "       ë©´ì  = " << c.area() << endl << endl;
 
 	r.print();
-	cout << "       ¸éÀû = " << r.area() << endl;
+	cout << "       ë©´ì  = " << r.area() << endl;
 
 	return 0;
 }
