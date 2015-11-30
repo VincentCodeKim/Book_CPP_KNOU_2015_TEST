@@ -14,11 +14,11 @@ int	main()
 {
 	int	intArr[10] = {20, 30, 12, 15, 50, 24, 72, 44, 81, 5};
 
-	cout << "¹è¿­ÀÇ ³»¿ë : ";
+	cout << "ë°°ì—´ì˜ ë‚´ìš© : ";
 	for (int i=0 ; i < 10 ; i++)
 		cout << intArr[i] << "  ";
 	cout << endl << endl;
-	cout << "ÃÖ´ë°ª = ";
+	cout << "ìµœëŒ€ê°’ = ";
 	cout << findMax(intArr, 10) << endl;
 
 	return 0;
