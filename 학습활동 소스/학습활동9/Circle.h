@@ -15,7 +15,7 @@ public:
 	}
 
 	void	print() const {
-		cout << "¿ø --> Áß½ÉÁÂÇ¥ (" << centerX << ", " << centerY << ")  ¹Ý°æ " << radius << endl;
+		cout << "ì› --> ì¤‘ì‹¬ì¢Œí‘œ (" << centerX << ", " << centerY << ")  ë°˜ê²½ " << radius << endl;
 	}
 };
 
