@@ -13,7 +13,7 @@ public:
 	Athlete(const string& n, const string& t) : Person(n), team(t) {}
 	const string&	getTeam() const { return team; }
 	void	print() const {
-		cout<< team << "ÆÀ ¼Ò¼Ó ¼±¼ö " << getName() << "ÀÔ´Ï´Ù";
+		cout<< team << "íŒ€ ì†Œì† ì„ ìˆ˜ " << getName() << "ìž…ë‹ˆë‹¤";
 	}
 };
 
