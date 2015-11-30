@@ -7,7 +7,7 @@ S::S(const char* n) : name(n), sNo(++nObjs) {}
 
 void	S::display() const
 {
-	cout << "ÀÌ¸§ : " << name << endl;
-	cout << "¹øÈ£ : " << sNo << endl << endl;
+	cout << "ì´ë¦„ : " << name << endl;
+	cout << "ë²ˆí˜¸ : " << sNo << endl << endl;
 }
 
