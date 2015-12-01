@@ -9,7 +9,7 @@ int	main()
 	int	yy, mm, dd;
 	try {
 		getDate(yy, mm, dd);
-		cout << "ÀÔ·ÂµÈ ³¯Â¥´Â " << yy << "³â " << mm  << "¿ù "<< dd << "ÀÏÀÔ´Ï´Ù." << endl;
+		cout << "ì…ë ¥ëœ ë‚ ì§œëŠ” " << yy << "ë…„ " << mm  << "ì›” "<< dd << "ì¼ì…ë‹ˆë‹¤." << endl;
 	}
 	catch (EClassLow& e) {
 		cout << e.what() << endl;
@@ -17,19 +17,17 @@ int	main()
 	catch (EClassHigh& e) {
 		cout << e.what() << endl;
 	}
-
 	return 0;
 }
 
 void	getDate(int &y, int &m, int& d)
 {
 	int	yy, mm, dd;
-
-	cout << "¿¬ : ";
+	cout << "ì—° : ";
 	cin >> yy;
-	cout << "¿ù : ";
+	cout << "ì›” : ";
 	cin >> mm;
-	cout << "ÀÏ : ";
+	cout << "ì¼ : ";
 	cin >> dd;
 
 	if (yy < 2000)
