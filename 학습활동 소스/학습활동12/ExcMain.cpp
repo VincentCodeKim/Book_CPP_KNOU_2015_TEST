@@ -9,7 +9,8 @@ int	main()
 	int	yy, mm, dd;
 	try {
 		getDate(yy, mm, dd);
-		cout << "입력된 날짜는 " << yy << "년 " << mm  << "월 "<< dd << "일입니다." << endl;
+		cout << "입력된 날짜는 " << yy << "년 " << mm  << endl;
+		cout << "월 "<< dd << "일입니다." << endl;
 	}
 	catch (EClassLow& e) {
 		cout << e.what() << endl;
