@@ -1,8 +1,8 @@
 #ifndef  PENCILS_H_INCLUDED
 #define  PENCILS_H_INCLUDED
 class  Pencils {
-    int  dozens;        // Å¸
-    int  np;            // ³¹°³
+    int  dozens;        // ì„¸íŠ¸
+    int  np;            // ë‚±ê°œ
 public:
     Pencils() : dozens(0), np(0) {};
     Pencils(int n)
