@@ -29,4 +29,5 @@ public:
 	}
 };
 
+
 #endif	// INTCLASS_H_INCLUDED
