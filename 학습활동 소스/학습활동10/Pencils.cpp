@@ -2,26 +2,27 @@
 #include  "Pencils.h"
 using  namespace  std;
 
-Pencils	Pencils::operator++() {  // ++ ¿¬»êÀÚ(ÀüÀ§ Ç¥±â)
-    if (++np >= 12)         // ³¹°³¸¦ 1 Áõ°¡½ÃÅ²´Ù. °á°ú°¡ 12º¸´Ù Å©¸é
-        ++dozens, np = 0;   // Å¸ ¼ö¸¦ 1 Áõ°¡½ÃÅ°°í, ³¹°³´Â 0
-    return *this;           // Áõ°¡µÈ °á°ú¸¦ ¹İÈ¯
+Pencils	Pencils::operator++() {  // ++ ì—°ì‚°ì(ì „ìœ„ í‘œê¸°)
+    if (++np >= 12)         // ë‚±ê°œë¥¼ 1 ì¦ê°€ì‹œí‚¨ë‹¤. ê²°ê³¼ê°€ 12ë³´ë‹¤ í¬ë©´
+        ++dozens, np = 0;   // íƒ€ ìˆ˜ë¥¼ 1 ì¦ê°€ì‹œí‚¤ê³ , ë‚±ê°œëŠ” 0
+    return *this;           // ì¦ê°€ëœ ê²°ê³¼ë¥¼ ë°˜í™˜
 }
 
-Pencils  Pencils::operator++(int)  {     // ++ ¿¬»êÀÚ(ÈÄÀ§ Ç¥±â)
-    Pencils	tmp(*this);     // ÇöÀç °´Ã¼¸¦ º¸Á¸
-    if (++np >= 12)         // ³¹°³¸¦ 1 Áõ°¡½ÃÅ²´Ù. °á°ú°¡ 12º¸´Ù Å©¸é
-        ++dozens, np = 0;   // Å¸ ¼ö¸¦ 1 Áõ°¡½ÃÅ°°í, ³¹°³´Â 0
-    return tmp;             // º¸Á¸µÈ °´Ã¼¸¦ ¹İÈ¯
+Pencils  Pencils::operator++(int)  {     // ++ ì—°ì‚°ì(í›„ìœ„ í‘œê¸°)
+    Pencils	tmp(*this);     // í˜„ì¬ ê°ì²´ë¥¼ ë³´ì¡´
+    if (++np >= 12)         // ë‚±ê°œë¥¼ 1 ì¦ê°€ì‹œí‚¨ë‹¤. ê²°ê³¼ê°€ 12ë³´ë‹¤ í¬ë©´
+        ++dozens, np = 0;   // íƒ€ ìˆ˜ë¥¼ 1 ì¦ê°€ì‹œí‚¤ê³ , ë‚±ê°œëŠ” 0
+    return tmp;             // ë³´ì¡´ëœ ê°ì²´ë¥¼ ë°˜í™˜
 }
 
 void  Pencils::display()  const
 {
     if (dozens) {
-        cout << dozens << "Å¸ ";
-        if (np)  cout << np << "ÀÚ·ç";
+        cout << dozens << "íƒ€ ";
+        if (np)  cout << np << "ìë£¨";
         cout << endl;
     }
     else
-        cout << np << "ÀÚ·ç" << endl;
+        cout << np << "ìë£¨" << endl;
 }
+
