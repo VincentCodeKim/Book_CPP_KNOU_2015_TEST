@@ -9,7 +9,7 @@ int	main()
 
 	int	n;
 	do {
-		cout << "Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À : ";
+		cout << "ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì‹œì˜¤ : ";
 		cin >> n;
 		if (n >= 0)
 			intVec.push_back(n);
@@ -21,10 +21,10 @@ int	main()
 	for (ivIter=intVec.begin() ; ivIter < intVec.end() ; ivIter++)
 		if (max < *ivIter)
 			max = *ivIter;
-	cout << "ÃÖ´ë°ª = " << max << endl << endl;
+	cout << "ìµœëŒ€ê°’ = " << max << endl << endl;
 
 	sort(intVec.begin(), intVec.end());
-	cout << "Á¤·Ä °á°ú : ";
+	cout << "ì •ë ¬ ê²°ê³¼ : ";
 	for (ivIter=intVec.begin() ; ivIter < intVec.end() ; ivIter++)
 		cout << *ivIter << "  ";
 	cout << endl;
