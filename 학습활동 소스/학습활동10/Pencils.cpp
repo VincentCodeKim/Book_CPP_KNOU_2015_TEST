@@ -25,4 +25,3 @@ void  Pencils::display()  const
     else
         cout << np << "자루" << endl;
 }
-
