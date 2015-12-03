@@ -1,7 +1,7 @@
 #ifndef  PENCILS_H_INCLUDED
 #define  PENCILS_H_INCLUDED
 class  Pencils {
-    int  dozens;        // 세트
+    int  dozens;        // 타
     int  np;            // 낱개
 public:
     Pencils() : dozens(0), np(0) {};
