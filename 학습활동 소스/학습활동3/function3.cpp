@@ -7,20 +7,20 @@ int	main()
 	float	findMax(float arr[], int n);
 	int	intArr[10] = {20, 30, 12, 15, 50, 24, 72, 44, 81, 5};
 
-	cout << "¹è¿­ÀÇ ³»¿ë : ";
+	cout << "ë°°ì—´ì˜ ë‚´ìš© : ";
 	for (int i=0 ; i < 10 ; i++)
 		cout << intArr[i] << "  ";
 	cout << endl << endl;
-	cout << "ÃÖ´ë°ª = ";
+	cout << "ìµœëŒ€ê°’ = ";
 	cout << findMax(intArr, 10) << endl << endl;
 
 	float	floatArr[10] = {20.5f, 30.3f, 1.2f, 15.6f, 50.3f, 2.4f, 72.5f, 44.0f, 8.1f, 5.0f};
 
-	cout << "¹è¿­ÀÇ ³»¿ë : ";
+	cout << "ë°°ì—´ì˜ ë‚´ìš© : ";
 	for (int i=0 ; i < 10 ; i++)
 		cout << floatArr[i] << "  ";
 	cout << endl << endl;
-	cout << "ÃÖ´ë°ª = ";
+	cout << "ìµœëŒ€ê°’ = ";
 	cout << findMax(floatArr, 10) << endl;
 
 	return 0;
@@ -43,3 +43,4 @@ float	findMax(float arr[], int n)
 			max = arr[i];
 	return max;
 }
+
