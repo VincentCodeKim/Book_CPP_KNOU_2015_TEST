@@ -2,7 +2,6 @@
 #include	<exception>
 #include	"EClass.h"
 using	namespace	std;
-
 int	main()
 {
 	void	getDate(int &y, int &m, int& d);
