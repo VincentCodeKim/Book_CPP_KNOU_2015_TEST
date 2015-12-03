@@ -10,3 +10,4 @@ void	S::display() const
 	cout << "이름 : " << name << endl;
 	cout << "번호 : " << sNo << endl << endl;
 }
+
