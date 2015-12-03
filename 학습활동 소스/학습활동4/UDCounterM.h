@@ -1,21 +1,22 @@
-#ifndef  UDCOUNTERM_H_INCLUDED   // Count.h°¡ Áßº¹ include µÇÁö ¾Ê¾Ò´ÂÁö °Ë»çÇÔ
-#define  UDCOUNTERM_H_INCLUDED   // Count.h°¡ Ã³À½ include µÉ ¶§ Á¤ÀÇµÊ
+#ifndef  UDCOUNTERM_H_INCLUDED   // Count.hê°€ ì¤‘ë³µ include ë˜ì§€ ì•Šì•˜ëŠ”ì§€ ê²€ì‚¬í•¨
+#define  UDCOUNTERM_H_INCLUDED   // Count.hê°€ ì²˜ìŒ include ë  ë•Œ ì •ì˜ë¨
 
-class  UDCounterM {            // Å¬·¡½º CounterÀÇ ¼±¾ğ ½ÃÀÛ
-    const int  maxValue;     // °è¼ö±âÀÇ ÃÖ´ë°ª
-    int  value;              // private µ¥ÀÌÅÍ ¸â¹ö  
+class  UDCounterM {            // í´ë˜ìŠ¤ Counterì˜ ì„ ì–¸ ì‹œì‘
+    const int  maxValue;     // ê³„ìˆ˜ê¸°ì˜ ìµœëŒ€ê°’
+    int  value;              // private ë°ì´í„° ë©¤ë²„  
 public:
-    UDCounterM(int mVal) : maxValue(mVal+1), value(0) { }   // »ı¼ºÀÚ
-    void  reset()             // °è¼ö±âÀÇ °ªÀ» 0À¸·Î Áö¿ò
+    UDCounterM(int mVal) : maxValue(mVal+1), value(0) { }   // ìƒì„±ì
+    void  reset()             // ê³„ìˆ˜ê¸°ì˜ ê°’ì„ 0ìœ¼ë¡œ ì§€ì›€
     {  value = 0;  }
-    void  countUp() {           // °è¼ö±âÀÇ °ªÀ» 1 Áõ°¡½ÃÅ´
+    void  countUp() {           // ê³„ìˆ˜ê¸°ì˜ ê°’ì„ 1 ì¦ê°€ì‹œí‚´
         value = (value + 1) % maxValue;
     }
 	void  countDown() {
 		value = (value + maxValue - 1) % maxValue;
 	}
-    int  getValue() const     // °è¼ö±âÀÇ ÇöÀç °ªÀ» ¹İÈ¯ÇÔ
+    int  getValue() const     // ê³„ìˆ˜ê¸°ì˜ í˜„ì¬ ê°’ì„ ë°˜í™˜í•¨
     {  return value;  }
 };
 
 #endif  // UDCOUNTERM_H_INCLUDED
+
