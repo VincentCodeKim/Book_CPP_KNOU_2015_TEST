@@ -20,3 +20,4 @@ public:
 };
 
 #endif	// CIRCLE_H_INCLUDED
+
