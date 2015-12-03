@@ -1,21 +1,21 @@
 #include <iostream>
 using namespace std;
-void SwapValues(int& x, int& y);   // ¿øÇü
+void SwapValues(int& x, int& y);   // ì›í˜•
 
 int  main()
 {
 	int a, b;
 
-	cout << "µÎ ¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À : ";
+	cout << "ë‘ ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤ : ";
 	cin >> a >> b;
-	if(a < b) SwapValues(a, b);    // ¼ø¼­¸¦ ¹Ù²ã a¿¡ Å« °ªÀ» ³ÖÀ½.
-	cout << "Å« ¼ö = " << a << "    ÀÛÀº ¼ö = " << b << endl;
+	if(a < b) SwapValues(a, b);    // ìˆœì„œë¥¼ ë°”ê¿” aì— í° ê°’ì„ ë„£ìŒ.
+	cout << "í° ìˆ˜ = " << a << "    ì‘ì€ ìˆ˜ = " << b << endl;
 	return 0;
 }
 
-// µÎ º¯¼öÀÇ °ªÀ» ¹Ù²Ù´Â ÇÔ¼ö
-// ÀÎ¼ö int& x, int& y : °ªÀ» ¹Ù²Ü º¯¼ö
-// ¹İÈ¯ : ¾øÀ½.
+// ë‘ ë³€ìˆ˜ì˜ ê°’ì„ ë°”ê¾¸ëŠ” í•¨ìˆ˜
+// ì¸ìˆ˜ int& x, int& y : ê°’ì„ ë°”ê¿€ ë³€ìˆ˜
+// ë°˜í™˜ : ì—†ìŒ.
 
 void SwapValues(int& x, int& y)
 {
