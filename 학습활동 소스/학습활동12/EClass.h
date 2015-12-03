@@ -7,15 +7,16 @@ using	namespace	std;
 class	EClassLow : public exception {
 public:
 	const char* what() {
-		return "2000³â 1¿ù 1ÀÏ ÀÌÈÄ ³¯Â¥¸¦ ÀÔ·ÂÇÏ½Ã¿À";
+		return "2000ë…„ 1ì›” 1ì¼ ì´í›„ ë‚ ì§œë¥¼ ì…ë ¥í•˜ì‹œì˜¤";
 	}
 };
 
 class	EClassHigh : public exception {
 public:
 	const char* what() {
-		return "2100³â 12¿ù 31ÀÏ ÀÌÀü ³¯Â¥¸¦ ÀÔ·ÂÇÏ½Ã¿À";
+		return "2100ë…„ 12ì›” 31ì¼ ì´ì „ ë‚ ì§œë¥¼ ì…ë ¥í•˜ì‹œì˜¤";
 	}
 };
+
 
 #endif	ECLASS_H_INCLUDED
